@@ -9,7 +9,7 @@
     <% @blogs.each do |b| %>
     <tr>
         <td><%= b.id %></td>
-        <td><%= b.title %></td>
+        <td><%= link_to b.title, blog_path(b) %></td>
         <td><%= b.name %></td>
         <td><%= b.body %></td>
     </tr>
