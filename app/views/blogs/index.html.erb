@@ -1,0 +1,17 @@
+<h2>Post List</h2>
+<table>
+    <tr>
+        <th>id</th>
+        <th>title</th>
+        <th>name</th>
+        <th>body</th>
+    </tr>
+    <% @blogs.each do |b| %>
+    <tr>
+        <td><%= b.id %></td>
+        <td><%= b.title %></td>
+        <td><%= b.name %></td>
+        <td><%= b.body %></td>
+    </tr>
+    <% end %>
+</table>
