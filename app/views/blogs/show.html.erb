@@ -1,0 +1,9 @@
+<h2>Post Content <%= @blog.id %></h2>
+<table>
+    <tr><th>title</th><td><%= @blog.title %></td></tr>
+    <tr><th>name</th><td><%= @blog.name %></td></tr>
+    <tr><th>body</th><td><%= @blog.body %></td></tr>
+    <tr><th>created at</th><td><%= @blog.created_at ></td></tr>
+    <tr><th>updated at</th><td><%= @blog.updated_at %></td></tr>
+</table>
+<p><%= link_to 'Back', blogs_path %></p>
